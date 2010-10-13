@@ -5,3 +5,11 @@ Jon 14/10/10
 - I'm planning to write a bash script to automate the building process. Tell me if you want it.
 - Btw did you know you can colour code your git output to make it easier to see? The command's git config --global color.ui auto
 - For now I'm splitting each of the options into their seperate file, that way it's easier for us to split up and code without worrying that we'll accidentally merger the wrong stuff.
+- For now our program would look a bit like this:
+
+  mysync.h  ->  template.c (maybe renamed)  ->  mysync.c
+	 |												^
+	 |_>  all option_*.c  --------------------------|
+
+- Also I haven't exactly have it all figure out yet but we must ensure that our functions can work together.
+- I'll write up the specifications for each of the options later on.

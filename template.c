@@ -5,8 +5,7 @@
    Date:		<date of submission>
 */
 
-/* Comment out the next line when you have filled in your details above */
-#error Did you fill in your name and student number?
+#error Please enter the date of submission.
 
 #include "mysync.h"
 

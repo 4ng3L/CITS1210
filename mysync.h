@@ -5,8 +5,7 @@
    Date:		<date of submission>
 */
 
-/* Comment out the next line when you have filled in your details above */
-#error Did you fill in your name and student number?
+#error Please enter the submission date.
 
 #ifndef _MYSYNC_H_
 #define _MYSYNC_H_
