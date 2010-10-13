@@ -1,7 +1,7 @@
 /*
    CITS1210 Project 2
-   Name:		<name>			<name>
-   Student number:	<student number>	<student number>
+   Names:		Jonathan Chua			Angeline Honggowarsito
+   Student numbers:	10996944	20640062
    Date:		<date of submission>
 */
 
