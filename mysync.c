@@ -5,29 +5,37 @@
    Date:		<date of submission>
 */
 
-#error Please enter date of submission.
+#error Please enter the date of submission.
 
-#include "template.c"
+#include "mysync.h"
 
-int main(int argc, char *argv[])
+/****************************************************************/
+
+/*
+   processTopLevelDirectories(tls, paths, nDirs, opts) updates tls
+   and returns a pointer to a DIRECTORYINFO structure that contains
+   information about the files and sub-directories found in the nDirs
+   top-level directories specified by the paths array, using the options
+   in opts to guide the process.
+*/
+DIRECTORYINFO *processTopLevelDirectories(TOPLEVELS *tls, char **paths, int nDirs, OPTIONS opts)
 {
-	if (argc < 3)
-	{
-		//TODO change this to fit sample output
-		fprintf(stderr, "Please enter at least 2 files to be synced.\n");
-		exit(EXIT_FAILURE);
-	}
-	else
-	{
-		/*
-		 * TODO
-		 * parses in option. Still waiting for reply on cshelp
-		 * most probably will use switch with default being what will
-		 * happen if no options are supplied
-		 */
+	return NULL;
+}
 
-		exit(EXIT_SUCCESS);
-	}
+/* 
+   printFileSystem(d, tls) prints the directory structure represented
+   by d using the top-level pathnames from tls.
+*/
+void printFileSystem(DIRECTORYINFO *d, TOPLEVELS tls)
+{
+}
 
-	return 0;
+/*
+   syncFiles(d, tls, opts) synchronises the files contained within d
+   using the top-level pathnames from tls and the options in opts to
+   guide the process.
+*/
+void syncFiles(DIRECTORYINFO *d, TOPLEVELS tls, OPTIONS opts)
+{
 }
