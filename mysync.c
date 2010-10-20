@@ -2,10 +2,9 @@
    CITS1210 Project 2
    Names:		Jonathan Chua			Angeline Honggowarsito
    Student numbers:	10996944	20640062
-   Date:		<date of submission>
+   Date:		29/10/10
 */
 
-#error Please enter the date of submission.
 
 #include "mysync.h"
 
@@ -18,24 +17,24 @@
    top-level directories specified by the paths array, using the options
    in opts to guide the process.
 */
-DIRECTORYINFO *processTopLevelDirectories(TOPLEVELS *tls, char **paths, int nDirs, OPTIONS opts)
+/*DIRECTORYINFO *processTopLevelDirectories(TOPLEVELS *tls, char **paths, int nDirs, OPTIONS opts)
 {
 	return NULL;
-}
+}*/
 
 /* 
    printFileSystem(d, tls) prints the directory structure represented
    by d using the top-level pathnames from tls.
 */
-void printFileSystem(DIRECTORYINFO *d, TOPLEVELS tls)
+/*void printFileSystem(DIRECTORYINFO *d, TOPLEVELS tls)
 {
-}
+}*/
 
 /*
    syncFiles(d, tls, opts) synchronises the files contained within d
    using the top-level pathnames from tls and the options in opts to
    guide the process.
 */
-void syncFiles(DIRECTORYINFO *d, TOPLEVELS tls, OPTIONS opts)
+/*void syncFiles(DIRECTORYINFO *d, TOPLEVELS tls, OPTIONS opts)
 {
-}
+}*/

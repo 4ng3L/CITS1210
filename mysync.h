@@ -2,10 +2,8 @@
    CITS1210 Project 2
    Names:		Jonathan Chua			Angeline Honggowarsito
    Student numbers:	10996944	20640062
-   Date:		<date of submission>
+   Date:		29/10/10
 */
-
-#error Please enter the submission date.
 
 #ifndef _MYSYNC_H_
 #define _MYSYNC_H_

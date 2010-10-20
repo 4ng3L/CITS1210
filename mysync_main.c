@@ -2,12 +2,10 @@
    CITS1210 Project 2
    Names:		Jonathan Chua			Angeline Honggowarsito
    Student numbers:	10996944	20640062
-   Date:		<date of submission>
+   Date:		29/10/10
 */
 
-#error Please enter date of submission.
-
-#include "template.c"
+#include "mysync.c"
 
 int main(int argc, char *argv[])
 {

@@ -8,8 +8,15 @@ Jon 14/10/10
 - For now our program would look a bit like this:
 
   mysync.h  ->  template.c (maybe renamed)  ->  mysync.c
-	 |												^
+	 |                                              ^
 	 |_>  all option_*.c  --------------------------|
 
 - Also I haven't exactly have it all figure out yet but we must ensure that our functions can work together.
 - I'll write up the specifications for each of the options later on.
+
+Jon 20/10/10
+- Renaming
+  mysync.h  ->  mysync.c ->  mysync_main.c
+	 |                             ^
+	 |_>  all option_*.c  ---------|
+- As we're linking to libproj2.a, our main functions will be hidden until we implement them.
