@@ -1,3 +1,19 @@
+Tasks:
+Jon:
+- mysync.c
+- process.c
+- option_m.c
+- print.c
+- option_n.c
+- option_p.c
+- option_v.c
+
+Angeline:
+- sync.c
+- option_a.c
+- option_r.c
+- option_u.c
+
 From now onwards please check here after a pull.
 
 Jon 14/10/10
@@ -20,3 +36,6 @@ Jon 20/10/10
 	 |                             ^
 	 |_>  all option_*.c  ---------|
 - As we're linking to libproj2.a, our main functions will be hidden until we implement them.
+- Changed my mind in the end, the template.c file got split up.
+- Please utilise libproj2.a to test and debug.
+- I've mainly isolated the tasks into 2 parts, syncing and non-syncing. You'll be doing the syncing and I'll do the rest. The options are relevant to the tasks (ie. options a, r, and u are relevant to syncing). Therefore it's up to you to design them.

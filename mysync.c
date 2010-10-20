@@ -5,36 +5,28 @@
    Date:		29/10/10
 */
 
+#include "source_collection.h"
 
-#include "mysync.h"
-
-/****************************************************************/
-
-/*
-   processTopLevelDirectories(tls, paths, nDirs, opts) updates tls
-   and returns a pointer to a DIRECTORYINFO structure that contains
-   information about the files and sub-directories found in the nDirs
-   top-level directories specified by the paths array, using the options
-   in opts to guide the process.
-*/
-/*DIRECTORYINFO *processTopLevelDirectories(TOPLEVELS *tls, char **paths, int nDirs, OPTIONS opts)
+int main(int argc, char *argv[])
 {
-	return NULL;
-}*/
+	if (argc < 3)
+	{
+		//TODO change this to fit sample output
+		fprintf(stderr, "Please enter at least 2 files to be synced.\n");
+		exit(EXIT_FAILURE);
+	}
+	else
+	{
+		/*
+		 * TODO
+		 * Basically read in 2 top_lvl_dirs and options, then parses them.
+		 * Calls the three main function to do all the work.
+		 * So only thing required here is to prepare the stuff required.
+		 */
+		option_a();
 
-/* 
-   printFileSystem(d, tls) prints the directory structure represented
-   by d using the top-level pathnames from tls.
-*/
-/*void printFileSystem(DIRECTORYINFO *d, TOPLEVELS tls)
-{
-}*/
+		exit(EXIT_SUCCESS);
+	}
 
-/*
-   syncFiles(d, tls, opts) synchronises the files contained within d
-   using the top-level pathnames from tls and the options in opts to
-   guide the process.
-*/
-/*void syncFiles(DIRECTORYINFO *d, TOPLEVELS tls, OPTIONS opts)
-{
-}*/
+	return 0;
+}
