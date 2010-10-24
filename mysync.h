@@ -9,6 +9,16 @@
 #define _MYSYNC_H_
 
 /****************************************************************/
+/* My own defines. */
+#define OPTLIST "am:npruv"
+#define DEFAULT_MOD_TIMES 1
+
+/* My own includes. */
+#include <unistd.h>
+
+/****************************************************************/
+
+/****************************************************************/
 /* Standard includes */
 #include <stdio.h>
 #include <stdlib.h>
