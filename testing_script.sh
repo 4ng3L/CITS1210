@@ -1,13 +1,13 @@
 #!/bin/bash
+clear
 echo Running testing script
 echo Removing old TestDirectory
-rm -r ./TD1 ./TD2
-echo Creating first new copy of TestDirectory
-cp -r ./TestDirectory ./TD1
-echo Creating second new copy of TestDirectory
-cp -r ./TestDirectory ./TD2
+rm -r ./TD
+echo Creating new copy of TestDirectory
+cp -r ./TestDirectory ./TD
 echo Building program
 make clean
 make
 echo Running mysync
-./mysync
+./mysync ./TD/Dir1 ./TD/Dir2
+echo Finished running testing script
