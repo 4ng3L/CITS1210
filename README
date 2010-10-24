@@ -39,3 +39,12 @@ Jon 20/10/10
 - Changed my mind in the end, the template.c file got split up.
 - Please utilise libproj2.a to test and debug.
 - I've mainly isolated the tasks into 2 parts, syncing and non-syncing. You'll be doing the syncing and I'll do the rest. The options are relevant to the tasks (ie. options a, r, and u are relevant to syncing). Therefore it's up to you to design them.
+
+
+24/10/10
+- miraculously the libproj2.a file works now. Just tested using the CSSE mac.
+- Also this is the proper design:
+  mysync.h  ->  process.c  ----|
+	 |------->  print.c  --------->  mysync.c
+	 |------->  sync.c  -------|        ^
+	 |_>  all option_*.c -> libopt.a  --|

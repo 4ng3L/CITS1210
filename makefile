@@ -4,13 +4,13 @@ OPT_OBJ = option_a.o option_m.o option_n.o option_p.o option_r.o option_u.o opti
 MAIN = print.o process.o sync.o
 
 $(PROJECT): $(PROJECT).c $(MAIN) libproj2.a libopt.a
-	$(COMPILE) -o mysync $(PROJECT).c $(MAIN) libproj2.a libopt.a
+	$(COMPILE) -o mysync $(PROJECT).c $(MAIN) -lproj2 -L./ -lopt -L./
 
 libopt.a: $(OPT_OBJ)
-	ar rc libopt.a $(OPT_OBJ)
+	ar -rcs libopt.a $(OPT_OBJ)
 
 %.o: %.c $(PROJECT).h
 	$(COMPILE) -c $<
 
 clean:
-	rm -f *.o
+	rm -f *.o libopt.a mysync
