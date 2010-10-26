@@ -93,8 +93,17 @@ int main(int argc, char *argv[])
 		d = processTopLevelDirectories(tls, paths, nDirs, options);
 		
 		TOPLEVELS tmp = *tls;
-		printFileSystem(d, tmp);
+		if (options.print)
+		{
+			printf("Pre-synchronisation file structure:\n");
+			printFileSystem(d, tmp);
+		}
 		syncFiles(d, tmp, options);
+		if (options.print)
+		{
+			printf("Post-synchronisation file structure:\n");
+			printFileSystem(d, tmp);
+		}
 		exit(EXIT_SUCCESS);
 	}
 
