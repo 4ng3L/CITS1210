@@ -6,7 +6,7 @@
 */
 
 #include <unistd.h>
-#include "source_collection.h"
+#include "mysync.h"
 
 #define OPTLIST "am:npruv"
 #define DEFAULT_MOD_TIMES 1
