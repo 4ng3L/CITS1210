@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 	options.performSync = true;
 	options.recursive = false;
 	options.print = false;
-	options.updateStatus = true;
+	options.updateStatus = false;
 	options.verbose = false;
 	options.programname = argv[0];
 
@@ -91,18 +91,25 @@ int main(int argc, char *argv[])
 		}
 
 		d = processTopLevelDirectories(tls, paths, nDirs, options);
-		
-		TOPLEVELS tmp = *tls;
-		if (options.print)
+
+		if(options.print)
 		{
 			printf("Pre-synchronisation file structure:\n");
-			printFileSystem(d, tmp);
+			printFileSystem(d, *tls);
 		}
-		syncFiles(d, tmp, options);
+
+		syncFiles(d, *tls, options);
+
+		/*
+		 * Update directory info.
+		 * Note that this is done by processT... and not syncFiles.
+		 */
+		d = processTopLevelDirectories(tls, paths, nDirs, options);
+
 		if (options.print)
 		{
 			printf("Post-synchronisation file structure:\n");
-			printFileSystem(d, tmp);
+			printFileSystem(d, *tls);
 		}
 		exit(EXIT_SUCCESS);
 	}
